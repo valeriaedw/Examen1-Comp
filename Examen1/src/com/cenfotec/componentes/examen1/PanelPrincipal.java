@@ -197,34 +197,15 @@ public class PanelPrincipal extends javax.swing.JPanel {
             for (int j = 0; j < caracteresUser.length; j++) {
 
                 if (caracteresGame[i] == caracteresUser[j]) {
-                    letra[j] = caracteresUser[j];
-
-                }
-            }
-        }
-
-        for (int k = 0; k < letra.length; k++) {
-
-            for (int l = 0; l < letra.length - 1; l++) {
-
-                if (k != l) {
-
-                    if (letra[k] == letra[l]) {
-
-                        letra[k] = 0;
-
+                    if(letra[j] != caracteresGame[i]){
+                        letra[j] = caracteresGame[i];
+                        aciertosParciales++;
                     }
-
                 }
             }
         }
-
-        for (int m = 0; m <= letra.length - 1; m++) {
-            if (letra[m] != 0) {
-                aciertosParciales++;
-            }
-        }
-
+        
+        
         numIntento++;
         intentosTotales--;
 

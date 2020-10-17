@@ -138,7 +138,7 @@ public class PanelPrincipal extends javax.swing.JPanel {
         jTextField1.setVisible(true);
         jButton2.setVisible(true);
         jLabel3.setVisible(true);
-        jTextField2.setVisible(true);
+        jTextField2.setVisible(false);
 
         this.jTextField1.setEnabled(true);
         this.jButton2.setEnabled(true);
